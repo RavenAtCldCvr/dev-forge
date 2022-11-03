@@ -1,21 +1,10 @@
-Configuration
-
-Docs
-Enumerate documentation resources with hyperlinks.
-
-Contribution Guidelines & Instructions
-List out project specific contribution guidelines. Moreover, you can hyperlink this document from this section.
-
-References
-List references with hyperlinks.
-
-# Name of the project
+# Name of the project (Must Have)
 > Additional information or tagline
 
 A brief description of your project and __its features__, what it is used for and how does life get
 awesome when someone starts to use it.
 
-## Usage
+## Usage (Must Have, if applicable)
 * Library/utility
 * Include examples on its usage.
 * Microservice or a web api
@@ -25,7 +14,7 @@ awesome when someone starts to use it.
 * Desktop / Mobile clients
 * Include screen shots to 1 commonly used feature.
 
-## Installing / Getting started
+## Installing / Getting started (Must Have)
 
 A quick introduction of the minimal setup you need to get the code base to work on a development machine
 
@@ -40,8 +29,10 @@ Here you should explain what actually happens when the instruction above is perf
 Some projects require initial configuration (e.g. access tokens or keys, `npm i`).
 This is the section where you would document those requirements.
 
-Example:
-
+Example: Configuring API Keys as a secret on the local machine's user profile folder
+```shell
+dotnet user-secrets set "PaymentService:OrderServiceApiKey" "35d87750-6448-4e18-a185-c8b10f723250"
+```
 
 ## Developing
 
@@ -81,43 +72,42 @@ packagemanager deploy awesome-project -s server.com -u username -p password
 
 And again you'd need to tell what the previous code actually does.
 
-## Features
+## Key Features (If not already covered in Usage)
 
-What's all the bells and whistles this project can perform?
+What's the bells and whistles this project can perform?
 * What's the main functionality
-* You can also do another thing
-* If you get really randy, you can even do this
+* You can also do another interesting thing
+* If you are keen, you can even do this
 
-## Configuration
+Alternatively, provide a link that has the above information
 
-Here you should write what are all of the configurations a user can enter when
-using the project.
+## Notable Configuration (If applicable)
 
-#### Argument 1
+Here you should indicate configurations that does not prevent the application from starting up, but has high business impact if misconfigured.
+
+### SalesNotificationEmailSignature
 Type: `String`
-Default: `'default value'`
+Default: `'Yours Sincerely, {{user.displayname}}'`
+
+### WebSocketMaxConnections
+Type: `Number|Boolean`
+Default: 100
 
 State what an argument does and how you can use it. If needed, you can provide
 an example below.
 
 Example:
-```bash
-awesome-project "Some other value"  # Prints "You're nailing this readme!"
+```shell
+awesome-project --WebSocketMaxConnections=120  # Limits a maximum of 120 concurrent connections
 ```
 
-#### Argument 2
-Type: `Number|Boolean`
-Default: 100
+## Contributing (Must Have)
 
-Copy-paste as many of these as you need.
+As a diverse and multi regional development organization, team members can be
+new to contributing to this codebase.
 
-## Contributing
-
-When you publish something open source, one of the greatest motivations is that
-anyone can just jump in and start contributing to your project.
-
-These paragraphs are meant to welcome those kind souls to feel that they are
-needed. You should state something like:
+These paragraphs are meant to onboard new contributors to follow existing conventions that the current team are enforcing.
+You should state something like:
 
 "If you'd like to contribute, please fork the repository and use a feature
 branch. Pull requests are warmly welcome."
@@ -127,7 +117,7 @@ guide), you should link it here. If there's a lot of things to take into
 consideration, it is common to separate this section to its own file called
 `CONTRIBUTING.md` (or similar). If so, you should say that it exists here.
 
-## Links
+## Links (If applicable)
 
 Even though this information can be found inside the project on machine-readable
 format like in a .json file, it's good to include a summary of most useful
@@ -144,10 +134,12 @@ to improve the security and privacy of this project!
 - Someone else's project: https://github.com/someones/awesome-project/
 
 
-## Licensing
+## Licensing (Remove or modify after reading)
 
-One really important part: Give your project a proper license. Here you should
-state what the license is and how to find the text version of the license.
-Something like:
+One really important part: DO NOT include a license file for a closed source repository.
+If you find software that doesn’t have a license, that generally means you have no permission from the
+creators of the software to use, modify, or share the software. Although a code host such as GitHub may
+allow you to view and fork the code, this does not imply that you are permitted to use, modify, or
+share the software for any purpose.
 
-"The code in this project is licensed under XYZ license."
+For more information, check out https://choosealicense.com/no-permission/
