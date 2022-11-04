@@ -1,6 +1,6 @@
 # Introduction
 
-Although MacOS bears similiarity with Linux, it's definately a good thing to
+Although MacOS bears similarity with Linux, it's definitely a good thing to
 automate the installation of development tools via CLI as much as possible for a consistent
 onboarding experience.
 
