@@ -1,7 +1,7 @@
 # Dev-Forge
 > Automatically scaffolds a collection of technology specific best practices
 
-Ever wanted to adopt or share an opinated set of best practices when working on a new project?
+Ever wanted to adopt or share an opinionated set of best practices when working on a new project?
 Dev-Forge strives to consolidate such practices and offer them to your project with a few terminal commands.
 
 ## Usage
@@ -19,7 +19,7 @@ devf.sh dotnet
 
 The script attempts to scaffolds .NET best practices to the current directory in the following steps:
 1. Copy best practices from the general and dotnet folder to the current directory.
-1. Files with the same name will be overwritten implictly.
+1. Files with the same name will be overwritten implicitly.
 1. Remove unused files and folders provisioned by the template
 
 ## Contributing
