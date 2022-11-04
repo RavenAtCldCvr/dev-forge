@@ -3,6 +3,13 @@ Refer to https://docs.gitignore.io/install/command-line for instructions for you
 
 For brevity, we assume you are issued a MacOS machine.
 
+Default Shell on MacOS is zsh
+```zsh
+echo "function gi() { curl -sL https://www.toptal.com/developers/gitignore/api/\$@ ;}" >> \
+~/.zshrc && source ~/.zshrc
+```
+
+If you are using Bash shell. (Not a default on MacOS)
 ```bash
 echo "function gi() { curl -sL https://www.toptal.com/developers/gitignore/api/\$@ ;}" >> \
 ~/.bash_profile && source ~/.bash_profile
