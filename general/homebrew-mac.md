@@ -7,7 +7,7 @@ onboarding experience.
 # Assumptions
 
 This article assumes the following:
-* Your Corporate IT has already installed the Certicate Authority and MDM profile on your MacOS.
+* Your Corporate IT has already installed the Certificate Authority and MDM profile on your MacOS.
 * You are using macOS 10.13 or higher (essential, if you want to install PowerShell)
 
 # Brew - A Package Manager For MacOS
