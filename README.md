@@ -24,7 +24,7 @@ The script attempts to scaffolds .NET best practices to the current directory in
 3. Remove unused files and folders provisioned by the template
 
 ## Developing
-This project has dependencies that should not be replaced without discussion.
+This project has dependencies that should not be replaced before a discussion is concluded.
 
 ### Package Managers
 The following package managers should be prioritized:
